@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> 54 Remove Object </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundaments");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+
+// Chapter Seven: Objects in Javascript 
+
+// Student 1:
+// math: 80;
+// chemistry: 50;
+// physics: 86;
+// higher math: 90;
+
+// [80, 50, 86, 90]
+
+
+// Comparing two objects
+
+var obj1 = {
+  a: 10,
+  b: 20
+}
+
+var obj2 = {
+  a: 10, 
+  b: 20
+}
+
+console.log('simple Comparing : ' , obj1 === obj2);
+
+if (obj1.a === obj2.a && obj1.b === obj2.b) {
+  console.log(true)
+} else {
+  console.log(false)
+}
+
+console.log('using json string : ' , JSON.stringify(obj1) === JSON.stringify(obj2));
+
+
+</script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>

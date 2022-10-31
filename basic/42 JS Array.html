@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> js Array Declaration </title>
+    <style type="text/css" >
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+        body {
+            font-family: arial;
+            font-size: 18px;
+            color: #444;
+            line-height: 25px;
+        }
+        .content {
+            background: #f0f0f0;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .mainContent {
+           background: #fff;
+            margin: 10px;
+            min-height: 500px;
+            padding: 5px 10px;
+        }
+        .header , .footer {
+            text-align: center;
+            background: #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+	<body>
+        <section class="content" >
+            <div class="header" >
+                <h2>
+                    <script>
+                        document.write("Tutorial : Javascript Fundamentas" );
+                    </script>
+                </h2>
+            </div>
+            <div class="mainContent" >
+              <script>
+                var arr = [1, 2, 3, 4, 5];
+                arr[5] = 6;
+                arr[10] = 11;
+                document.write("Show Array = " + arr + "<br>");
+                document.write("Show 8 Number Array = " + arr[8] + "<br>");
+                document.write("Show 3 Number Array = " + arr[3] + "<br>");
+                document.write("Array Length = " + arr.length  + "<br>");
+
+                // Hard Array
+                var arr2 = Array(1,2,3);
+                document.write("Emty Array " + arr2);
+              </script>
+            </div>
+            <div class="footer" >
+                <h2>
+                    <script>
+                        document.write("Stack Learner");
+                    </script>
+                </h2>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Array Declaration </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundamentas");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+        var arr = [ 4, 5, 3, 6, 3];
+        document.write("All Array date : " + arr + "<br>");
+        document.write("Array Length : " + arr.length + "<br>");
+        document.write("index 3 number array : " + arr[2] + "<br>");
+        arr[5] = 7;
+        document.write("Add new array : " + arr + "<br>");
+        arr[4] = 12;
+        document.write("Add new array replace 5 number array : " + arr + "<br>");
+        document.write("Array Length : " + arr.length + "<br><br>");
+
+        var arr2 = Array();
+        arr2 = 6;
+        console.log(arr2);
+      </script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>

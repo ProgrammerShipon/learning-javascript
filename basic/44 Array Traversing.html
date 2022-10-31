@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Array Traversing </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundaments");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+        var arr = [1, 2, 5, 7, 4, 8, 5];
+        for (var i = 0; i < arr.length; i++) {
+          document.write("Array Traversing = " + arr[i] + "<br>");
+        }
+
+        document.write("<br>");
+
+        for (var i = 0; i < arr.length; i++) {
+          arr[i] += 2;
+          document.write("Array Traversin +2 = " + arr[i] + "<br>");
+        }
+
+        document.write("<br>"); 
+
+        var arr = [1, 2, 5, 7, 4, 8, 5];
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        document.write("Array Traversing sum = " + sum);
+
+        document.write("<br>");
+
+        var arr = [1, 76, 2, 5, 7, 4, 8, 5];
+        document.write('Array Even Number = ');
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] % 2 == 0) {
+            document.write(arr[i] + '\,');
+          }
+          // return arr[i];
+        }
+
+        document.write("<br>");
+
+        var odd_traversing = [4,3,56,3,5,3,54,3,53,5,3];
+        document.write("Array Even Number = ");
+        for(var i = 0; i < odd_traversing.length; i++){
+          if(odd_traversing[i] % 2 == 1 ) {
+            document.write(odd_traversing[i] + '\,')
+          }
+        }
+      </script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>

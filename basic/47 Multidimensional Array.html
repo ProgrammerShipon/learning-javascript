@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Multidimensional Array </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundaments");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+
+        var arr = [
+          [78, 67, 78 ],
+          [76, 89, 67 ],
+          [89, 98, 98 ]
+        ]
+        document.write("Only first Array : " + arr[0] + "<br>");
+        document.write("Second Array : " + arr[0][0] + "<br><br>");
+
+        // Array traversing
+        for (var i = 0; i < arr.length; i++) {
+          document.write("All Array print : " + arr[i] + "<br>");
+        };
+
+        document.write("<br><br>");
+        
+        // two dimensional Array
+        for (var m = 0; m < arr.length; m++) {
+          for ( var n = 0; n < arr[m].length; n++) {
+            document.write('Element ' + m + ' : '+ arr[m][n] + "<br>");
+          }
+        }
+
+
+       </script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>

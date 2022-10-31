@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Array Insert Remove and Replace.html </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundaments");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+
+        var arr = [1, 2, 5, 7, 4, 8, 5];
+        document.write("Original Array : " + arr + "<br>");
+
+        // Array insert 9 to index 3
+        arr[3] = 9;
+        document.write("Array insert 9 to index 3 : " + arr + "<br>");
+
+        // Array push 10
+        document.write("Original Array : " + arr + "<br>");
+        arr.push(10);
+        document.write("Array push 10 : " + arr + "<br>");
+
+        // Array shift 11
+        document.write("Original Array : " + arr + "<br>");
+        arr.shift(20);
+        document.write("Array shift 20 : " + arr + "<br>");
+
+        // Array unshift 11
+        document.write("Original Array : " + arr + "<br>");
+        arr.unshift(11);
+        document.write("Array Unshift 11 : " + arr + "<br>");
+
+        // Array splice 3 number index 
+        document.write("Original Array : " + arr + "<br>");
+        arr.splice(3, 0, 10, 11);
+        document.write("Array Splice 3 number index 0 number position : " + arr + "<br>");
+
+        document.write("Last Original Array : " + arr + "<br>");
+        arr[3] = undefined;
+        document.write("undefined 3 Number option : " + arr + "<br>");
+
+        var arr2 = [2,3,4,5,6];
+        document.write("new array : " + arr2 + "<br>");
+        arr2.pop();
+        document.write("pop Array : " + arr2 + "<br>");
+
+        // splice array
+        var arr3 = [9,8,7,6,5,4];
+        document.write("Original Array : " + arr3 + "<br>");
+        arr3.splice(3, 1, 44);
+        document.write("splice 3, 1 : " + arr3 + "<br>");
+
+
+
+      </script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>

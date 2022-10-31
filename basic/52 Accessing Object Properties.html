@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> 52 Accessing Object Properties </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: arial;
+      font-size: 18px;
+      color: #444;
+      line-height: 25px;
+    }
+
+    .content {
+      background: #f0f0f0;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 10px;
+      min-height: 500px;
+      padding: 5px 10px;
+    }
+
+    .header,
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="content">
+    <div class="header">
+      <h2>
+        <script>
+          document.write("Tutorial : Javascript Fundaments");
+        </script>
+      </h2>
+    </div>
+    <div class="mainContent">
+      <script>
+
+// Chapter Seven: Objects in Javascript 
+
+// Student 1:
+// math: 80;
+// chemistry: 50;
+// physics: 86;
+// higher math: 90;
+
+// [80, 50, 86, 90]
+
+
+var point = {
+  x: 10,
+  y: 20,
+  z: 30
+}
+
+console.log('point x value : ' , point.x);
+console.log('point y value : ' , point.y);
+console.log('point x sum y : ' , point.x + point.y);
+
+console.log('Array notation : ' , point['x']);
+
+var show = 'z';
+console.log('using variable on show : ' , point[show]);
+
+
+
+</script>
+    </div>
+    <div class="footer">
+      <h2>
+        <script>
+          document.write("Stack Learner");
+        </script>
+      </h2>
+    </div>
+  </section>
+</body>
+
+</html>
