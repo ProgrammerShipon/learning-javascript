@@ -26,7 +26,4 @@ let iterate = createIterator(arr);
 // console.dir(iterate.next());
 
 
-console.log(arr[Symbol.iterator])
-
-
 
