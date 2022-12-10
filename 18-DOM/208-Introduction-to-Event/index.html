@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Introduction to Event in DOM Manupulation </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="container" class="md:container mx-auto">
+
+    <h2 id="title" class="text-3xl text-center my-6"> Learning DOM in Javascript </h2>
+
+    <ul id="list" class="grid gap-y-2 text-2xl w-11/12 mx-auto leading-normal">
+      <li class="rounded border p-2" name="list-item-one"> One </li>
+      <li class="rounded border p-2"> Two </li>
+      <li class="rounded border p-2"> Three </li>
+      <li class="rounded border p-2"> Four </li>
+    </ul>
+    <button id="btn" class="ml-14 mt-4 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-40">
+      Add
+    </button>
+    <div class="box w-100 bg-blue-100 h-40 mt-4 p-3" id="box">
+      <p>
+        (
+          X- <span id="x-value"> 0 </span> , 
+          Y- <span id="y-value"> 0 </span>
+        )
+      </p>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
